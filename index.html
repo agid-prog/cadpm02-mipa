@@ -384,17 +384,17 @@
             <div class="space-y-3 mt-8">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScfDfcWGxo6rBe6g8gm_bpIokZV6MDezdeJ9pAy44GQsO99bw/viewform" 
                    target="_blank" 
-                   class="block w-full text-center bg-[#7a6200] text-white py-4 rounded-xl font-black hover:opacity-90 transition-all shadow-lg animate-bounce">
-                   COBA SIMULASI SEKARANG <i class="fas fa-edit ml-2"></i>
+                   class="block w-full text-center bg-[#7a6200] text-white py-4 rounded-xl font-black hover:opacity-90 transition-all shadow-lg">
+                   COBA UJIAN SEKARANG <i class="fas fa-edit ml-2"></i>
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-navy-agid transition">Nanti Saja</button>
             </div>`;
     } else if (id === 'modal-hukumin') {
         actionButton = `
             <div class="space-y-3 mt-8">
-                <a href="hukumin-simulasi.html" 
-                   class="block w-full text-center bg-gradient-to-r from-purple-700 to-pink-600 text-white py-4 rounded-xl font-black hover:scale-[1.02] transition-all shadow-lg">
-                   COBA SIMULASI SEKARANG <i class="fab fa-instagram ml-2"></i>
+                <a href="/hukumin-simulasi.html" 
+                   class="block w-full text-center bg-gradient-to-r from-purple-700 to-pink-600 text-white py-4 rounded-xl font-black hover:scale-[1.02] transition-all shadow-lg animate-bounce">
+                    COBA SIMULASI SEKARANG <i class="fas fa-play-circle ml-2"></i>
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-navy-agid transition">Nanti Saja</button>
             </div>`;
@@ -404,11 +404,12 @@
                 <a href="https://forms.gle/YLjs474iAd233kzM9" 
                    target="_blank" 
                    class="block w-full text-center bg-[#25D366] text-white py-4 rounded-xl font-black hover:bg-[#128C7E] transition-all shadow-lg">
-                   MULAI LAPOR (ANONIM) <i class="fab fa-whatsapp ml-2"></i>
+                    MULAI LAPOR (ANONIM) <i class="fab fa-whatsapp ml-2"></i>
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-green-600 transition">Tutup</button>
             </div>`;
     } else {
+        // Tombol default jika tidak ada ID yang cocok
         actionButton = `
             <button onclick="closeModal()" class="mt-8 bg-navy-agid text-white px-8 py-3 rounded-xl font-bold w-full hover:bg-slate-800 transition shadow-lg">
                 Tutup
@@ -436,10 +437,9 @@
     document.getElementById('modal-container').classList.remove('hidden');
 }
 
-        function closeModal() {
-            document.getElementById('modal-container').classList.add('hidden');
-        }
-    </script>
+function closeModal() {
+    document.getElementById('modal-container').classList.add('hidden');
+}
 
     <!-- SECTION DOKUMEN STRATEGIS - DIPERBAIKI -->
     <section id="dokumen" class="py-20 bg-maroon-agid relative border-t-8 border-[#7a6200]">
@@ -572,5 +572,6 @@
 </body>
 
 </html>
+
 
 
