@@ -77,7 +77,7 @@
                         <span class="text-[10px] font-bold">cadpm02mipa</span>
                         <span class="text-[8px] opacity-60">HUKUMIN! • 14m</span>
                     </div>
-                    <button onclick="window.location.href='index.html'" class="ml-auto text-xl opacity-50">&times;</button>
+                    <button onclick="window.location.href='/'" class="ml-auto text-xl opacity-50">&times;</button>
                 </div>
 
                 <div class="flex-grow flex items-center justify-center p-5 relative z-10" id="slide-content"></div>
@@ -176,7 +176,7 @@
                         </div>
                         <h1 class="text-xl font-black mb-2 text-[#ffc200] italic">${slide.title}</h1>
                         <p class="text-[10px] opacity-70 mb-8">${slide.desc}</p>
-                        <button onclick="window.location.href='index.html'" class="bg-white text-[#000080] px-6 py-2 rounded-full font-black text-[9px] uppercase">BERANDA</button>
+                        <button onclick="window.location.href='/'" class="bg-white text-[#000080] px-6 py-2 rounded-full font-black text-[9px] uppercase">BERANDA</button>
                     </div>`;
             }
         }
@@ -197,7 +197,7 @@
 
         window.nextSlide = function() {
             if(currentSlide < slides.length - 1) { currentSlide++; renderSlide(); }
-            else { window.location.href = 'index.html'; }
+            else { window.location.href = '/'; }
         };
 
         window.prevSlide = function() {
@@ -207,4 +207,5 @@
         renderSlide();
     </script>
 </body>
+
 </html>
