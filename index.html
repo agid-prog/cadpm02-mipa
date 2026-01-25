@@ -114,7 +114,7 @@
                 <span class="font-bold text-xs md:text-sm tracking-wider uppercase text-[#ffc200]">AGID AL SYAH PUTRA</span>
             </div>
             <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase">
-                <a href="/" class="hover:text-[#ffc200] transition">Beranda</a>
+                <a href="#home" class="hover:text-[#ffc200] transition">Beranda</a>
                 <a href="#visi" class="hover:text-[#ffc200] transition">Visi Misi</a>
                 <a href="#proker" class="hover:text-[#ffc200] transition">Program</a>
                 <a href="#dokumen" class="bg-[#7a6200] px-4 py-2 rounded shadow-lg">Kenali Agid</a>
@@ -277,7 +277,7 @@
         <!-- Ornamen 4 Jurusan MIPA -->
         <div class="mipa-ornament math-orb top-20 left-20 animate-pulse" style="animation-duration: 3s;"></div>
         <div class="mipa-ornament physics-orb top-10 right-10 animate-pulse" style="animation-duration: 4.5s;"></div>
-        <div class="absolute inset-0 batik-mipa pointer-events-none"></div>
+        <div class="absolute inset-0 batik-mipa"></div>
         
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16">
@@ -311,9 +311,9 @@
                     <div class="p-8">
                         <h3 class="text-2xl font-black text-navy-agid mb-2">HUKUMIN!</h3>
                         <p class="text-xs font-bold text-[#2e6417] uppercase mb-4 tracking-tighter">Hukum Menarik & Interaktif</p>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Edukasi konstitusi melalui kuis interaktif di media sosial (Instagram).</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Edukasi konstitusi & hukum melalui kuis interaktif di media sosial (Instagram).</p>
                         
-                        <button onclick="openModal('modal-hukumin')" class="relative z-20 w-full bg-gradient-to-r from-[#2e6417] to-[#1a3d0d] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
+                        <button onclick="openModal('modal-hukumin')" class="w-full bg-gradient-to-r from-[#2e6417] to-[#1a3d0d] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
                             Detail Program <i class="fas fa-arrow-right text-xs"></i>
                         </button>
                     </div>
@@ -354,16 +354,16 @@
     'modal-serta': {
         title: 'SERTA',
         subtitle: 'Sertifikasi Aspirasi',
-        focus: 'Fokus: Standarisasi database aspirasi.',
-        method: 'Metode: Validasi berkas fisik dan digital.',
-        output: 'Output: Data aspirasi yang terverifikasi dan akurat.'
+        focus: 'Fokus: Standarisasi Kompetensi Internal.',
+        method: 'Metode: Pelatihan dan ujian kompetensi digital secara berkala bagi seluruh pengurus.',
+        output: 'Output: Menjamin pengurus DPM yang cerdas, profesional, dan berintegritas.'
     },
     'modal-hukumin': {
         title: 'HUKUMIN!',
         subtitle: 'Hukum Menarik & Interaktif',
-        focus: 'Fokus: Edukasi Konstitusi Digital.',
+        focus: 'Fokus: Edukasi Hukum & Konstitusi.',
         method: 'Metode: Kuis interaktif mingguan via Instagram Story.',
-        output: 'Output: Peningkatan literasi hukum mahasiswa.'
+        output: 'Output: Meningkatkan literasi hukum mahasiswa FMIPA dengan cara yang modern.'
     },
     'modal-senyap': {
         title: 'SENYAP',
@@ -384,17 +384,17 @@
             <div class="space-y-3 mt-8">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScfDfcWGxo6rBe6g8gm_bpIokZV6MDezdeJ9pAy44GQsO99bw/viewform" 
                    target="_blank" 
-                   class="block w-full text-center bg-[#7a6200] text-white py-4 rounded-xl font-black hover:opacity-90 transition-all shadow-lg">
-                   COBA UJIAN SEKARANG <i class="fas fa-edit ml-2"></i>
+                   class="block w-full text-center bg-[#7a6200] text-white py-4 rounded-xl font-black hover:opacity-90 transition-all shadow-lg animate-bounce">
+                   COBA SIMULASI SEKARANG <i class="fas fa-edit ml-2"></i>
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-navy-agid transition">Nanti Saja</button>
             </div>`;
     } else if (id === 'modal-hukumin') {
         actionButton = `
             <div class="space-y-3 mt-8">
-                <a href="/hukumin-simulasi.html" 
-                   class="block w-full text-center bg-gradient-to-r from-purple-700 to-pink-600 text-white py-4 rounded-xl font-black hover:scale-[1.02] transition-all shadow-lg animate-bounce">
-                    COBA SIMULASI SEKARANG <i class="fas fa-play-circle ml-2"></i>
+                <a href="hukumin-simulasi.html" 
+                   class="block w-full text-center bg-gradient-to-r from-purple-700 to-pink-600 text-white py-4 rounded-xl font-black hover:scale-[1.02] transition-all shadow-lg">
+                   COBA SIMULASI SEKARANG <i class="fab fa-instagram ml-2"></i>
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-navy-agid transition">Nanti Saja</button>
             </div>`;
@@ -404,12 +404,11 @@
                 <a href="https://forms.gle/YLjs474iAd233kzM9" 
                    target="_blank" 
                    class="block w-full text-center bg-[#25D366] text-white py-4 rounded-xl font-black hover:bg-[#128C7E] transition-all shadow-lg">
-                    MULAI LAPOR (ANONIM) <i class="fab fa-whatsapp ml-2"></i>
+                   MULAI LAPOR (ANONIM) <i class="fab fa-whatsapp ml-2"></i>
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-green-600 transition">Tutup</button>
             </div>`;
     } else {
-        // Tombol default jika tidak ada ID yang cocok
         actionButton = `
             <button onclick="closeModal()" class="mt-8 bg-navy-agid text-white px-8 py-3 rounded-xl font-bold w-full hover:bg-slate-800 transition shadow-lg">
                 Tutup
@@ -437,156 +436,138 @@
     document.getElementById('modal-container').classList.remove('hidden');
 }
 
-function closeModal() {
-    document.getElementById('modal-container').classList.add('hidden');
-}
+        function closeModal() {
+            document.getElementById('modal-container').classList.add('hidden');
+        }
+    </script>
 
     <!-- SECTION DOKUMEN STRATEGIS - DIPERBAIKI -->
     <section id="dokumen" class="py-20 bg-maroon-agid relative border-t-8 border-[#7a6200]">
-    <div class="absolute inset-0 grunge-overlay pointer-events-none"></div>
-    
-    <div class="mipa-ornament chemistry-orb top-10 left-40 animate-pulse" style="animation-duration: 4s;"></div>
-    <div class="mipa-ornament biology-orb bottom-10 right-40 animate-pulse" style="animation-duration: 3.5s;"></div>
-    
-    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <h2 class="text-[#ffc200] text-4xl font-black mb-4 uppercase">Kenali Agid Lebih Dekat</h2>
-        <p class="text-white/80 font-bold tracking-widest uppercase text-sm mb-12">Yuk kenal lebih dalam siapa AGID!</p>
+        <div class="absolute inset-0 grunge-overlay"></div>
         
-        <div class="grid md:grid-cols-2 gap-8">
-            <a href="https://s.id/ManifestasiCADPM02KMFMIPA" target="_blank" class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
-                <i class="fas fa-file-pdf text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
-                <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Kisah & Perjalanan Agid</h4>
-                <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Melalui dokumen ini, saya merangkum latar belakang pribadi, perjalanan hidup, rekam jejak, penghargaan, serta visi dan misi saya</p>
-            </a>
-            <a href="https://drive.google.com/file/d/1vd_1S1Ixp4g6mFa4fHoU-Fgvle-8U2Ix/view?usp=sharing" target="_blank" class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
-                <i class="fas fa-file-powerpoint text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
-                <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Visi Misi Lengkap</h4>
-                <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Presentasi detail program</p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-black text-white py-12 border-t-4 border-[#ffc200] relative overflow-hidden">
-    <div class="mipa-gradient h-2 w-full absolute top-0 left-0"></div>
-    
-    <div class="max-w-7xl mx-auto px-4 text-center space-y-6 relative z-10">
-        <div class="text-5xl font-black text-[#ffc200] glow-02">02</div>
-        <p class="tracking-[0.5em] font-bold text-sm">AGID AL SYAH PUTRA • MAHASISWA FISIKA 2023</p>
+        <!-- Ornamen 4 Jurusan MIPA -->
+        <div class="mipa-ornament chemistry-orb top-10 left-40 animate-pulse" style="animation-duration: 4s;"></div>
+        <div class="mipa-ornament biology-orb bottom-10 right-40 animate-pulse" style="animation-duration: 3.5s;"></div>
         
-        <div class="space-y-4">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-                <a href="https://instagram.com/agidal_" target="_blank" class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
-                    <span class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG Pribadi:</span>
-                    <div class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
-                        <i class="fab fa-instagram text-2xl"></i>
-                        <span class="font-bold">@agidal_</span>
-                    </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-[#ffc200] text-4xl font-black mb-4 uppercase">Kenali Agid Lebih Dekat</h2>
+            <p class="text-white/80 font-bold tracking-widest uppercase text-sm mb-12">Yuk kenal lebih dalam siapa AGID!</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="https://s.id/ManifestasiCADPM02KMFMIPA" class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
+                    <i class="fas fa-file-pdf text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
+                    <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Kisah & Perjalanan Agid</h4>
+                    <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Melalui dokumen ini, saya merangkum latar belakang pribadi, perjalanan hidup, rekam jejak, penghargaan, serta visi dan misi saya</p>
                 </a>
-                
-                <a href="https://instagram.com/cadpm02mipa" target="_blank" class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
-                    <span class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG Kampanye:</span>
-                    <div class="flex items-center gap-2 bg-gradient-to-r from-[#7a6200] to-[#ffc200] px-4 py-2 rounded-full">
-                        <i class="fas fa-bullhorn text-2xl"></i>
-                        <span class="font-bold">@cadpm02mipa</span>
-                    </div>
+                <a href="https://drive.google.com/file/d/1vd_1S1Ixp4g6mFa4fHoU-Fgvle-8U2Ix/view?usp=sharing" class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
+                    <i class="fas fa-file-powerpoint text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
+                    <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Visi Misi Lengkap</h4>
+                    <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Presentasi detail program</p>
                 </a>
             </div>
-            <p class="text-white/50 text-xs mt-4">Follow untuk update terbaru seputar kampanye!</p>
         </div>
-    </div>
-</footer>
+    </section>
 
-<script>
-    // --- FUNGSI UPDATE COUNTDOWN ---
-    const kampanyeAkbar = new Date('February 9, 2026 00:00:00').getTime();
-    const hariTenang = new Date('February 10, 2026 00:00:00').getTime();
-    const dDayPemira = new Date('February 11, 2026 00:00:00').getTime();
+    <footer class="bg-black text-white py-12 border-t-4 border-[#ffc200] relative overflow-hidden">
+        <!-- Gradient Strip 4 Jurusan di atas footer -->
+        <div class="mipa-gradient h-2 w-full absolute top-0 left-0"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-6 relative z-10">
+            <div class="text-5xl font-black text-[#ffc200] glow-02">02</div>
+            <p class="tracking-[0.5em] font-bold text-sm">AGID AL SYAH PUTRA • MAHASISWA FISIKA 2023</p>
+            
+            <!-- Social Media Links dengan Label -->
+            <div class="space-y-4">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                    <!-- Instagram Pribadi -->
+                    <a href="https://instagram.com/agidal_" class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                        <span class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG Pribadi:</span>
+                        <div class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fab fa-instagram text-2xl"></i>
+                            <span class="font-bold">@agidal_</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Instagram Kampanye -->
+                    <a href="https://instagram.com/cadpm02mipa" class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                        <span class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG Kampanye:</span>
+                        <div class="flex items-center gap-2 bg-gradient-to-r from-[#7a6200] to-[#ffc200] px-4 py-2 rounded-full">
+                            <i class="fas fa-bullhorn text-2xl"></i>
+                            <span class="font-bold">@cadpm02mipa</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <p class="text-white/50 text-xs mt-4">Follow untuk update terbaru seputar kampanye!</p>
+            </div>
+        </div>
+    </footer>
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        let targetDate, title, subtitle, cta;
+    <!-- Countdown Timer Script -->
+    <script>
+        // TANGGAL PENTING PEMIRA
+        const kampanyeAkbar = new Date('February 9, 2026 00:00:00').getTime();
+        const hariTenang = new Date('February 10, 2026 00:00:00').getTime();
+        const dDayPemira = new Date('February 11, 2026 00:00:00').getTime();
 
-        if (now < kampanyeAkbar) {
-            targetDate = kampanyeAkbar;
-            title = 'KAMPANYE AKBAR!';
-            subtitle = '09 Februari 2026 • Lokasi akan diinfokan segera';
-            cta = '📢 Jangan lewatkan! Hadir dan kenalan langsung dengan AGID!';
-        } else if (now < hariTenang) {
-            targetDate = hariTenang;
-            title = '🤫 HARI TENANG';
-            subtitle = '10 Februari 2026 • Waktu Refleksi Sebelum Pemira';
-            cta = '💭 Gunakan waktu ini untuk memantapkan pilihan Anda!';
-        } else if (now < dDayPemira) {
-            targetDate = dDayPemira;
-            title = '🗳️ D-DAY PEMIRA! SAATNYA MENCOBLOS! 🗳️';
-            subtitle = '11 Februari 2026 • HARI BERSEJARAH!';
-            cta = '⚡ INI DIA! Coblos nomor 02 untuk perubahan FMIPA! ⚡';
-        } else {
-            if(document.getElementById('countdown-title')) {
+        function updateCountdown() {
+            const now = new Date().getTime();
+            let targetDate, title, subtitle, cta;
+
+            // Tentukan fase countdown
+            if (now < kampanyeAkbar) {
+                // FASE 1: Countdown ke Kampanye Akbar
+                targetDate = kampanyeAkbar;
+                title = 'KAMPANYE AKBAR!';
+                subtitle = '09 Februari 2026 • Lokasi akan diinfokan segera';
+                cta = '📢 Jangan lewatkan! Hadir dan kenalan langsung dengan AGID!';
+            } else if (now < hariTenang) {
+                // FASE 2: Countdown ke Hari Tenang
+                targetDate = hariTenang;
+                title = '🤫 HARI TENANG';
+                subtitle = '10 Februari 2026 • Waktu Refleksi Sebelum Pemira';
+                cta = '💭 Gunakan waktu ini untuk memantapkan pilihan Anda!';
+            } else if (now < dDayPemira) {
+                // FASE 3: Countdown ke D-Day (PALING PENTING!)
+                targetDate = dDayPemira;
+                title = '🗳️ D-DAY PEMIRA! SAATNYA MENCOBLOS! 🗳️';
+                subtitle = '11 Februari 2026 • HARI BERSEJARAH!';
+                cta = '⚡ INI DIA! Coblos nomor 02 untuk perubahan FMIPA! ⚡';
+            } else {
+                // Setelah D-Day
                 document.getElementById('countdown-title').innerHTML = '✅ TERIMA KASIH SUDAH MEMILIH! ✅';
                 document.getElementById('countdown-subtitle').innerHTML = 'Pemira 2026 telah selesai';
                 document.getElementById('countdown-cta').innerHTML = '<p class="text-[#ffc200] text-base font-bold">🎊 Nantikan pengumuman hasil! 🎊</p>';
+                
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
             }
-            return;
-        }
 
-        const distance = targetDate - now;
-        const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((distance % (1000 * 60)) / 1000);
+            // Kalkulasi waktu
+            const distance = targetDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        if(document.getElementById('days')) {
+            // Update display
             document.getElementById('countdown-title').innerHTML = title;
             document.getElementById('countdown-subtitle').innerHTML = subtitle;
             document.getElementById('countdown-cta').innerHTML = `<p class="text-white/80 text-xs md:text-sm font-medium">${cta}</p>`;
-            document.getElementById('days').textContent = String(d).padStart(2, '0');
-            document.getElementById('hours').textContent = String(h).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(m).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+            
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
         }
-    }
 
-    // Jalankan countdown
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+        // Update setiap detik
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
 
-    // --- LOGIKA MODAL (DATA ANDA) ---
-    const programData = {
-        'modal-serta': { title: 'SERTA', subtitle: 'Sertifikasi Aspirasi', focus: 'Standarisasi database aspirasi.', method: 'Validasi berkas fisik dan digital.', output: 'Data aspirasi yang terverifikasi.' },
-        'modal-hukumin': { title: 'HUKUMIN!', subtitle: 'Hukum Menarik & Interaktif', focus: 'Edukasi Konstitusi Digital.', method: 'Kuis interaktif via Instagram.', output: 'Peningkatan literasi hukum.' },
-        'modal-senyap': { title: 'SENYAP', subtitle: 'Sistem Penyaluran Aspirasi', focus: 'Penjemputan Aspirasi Anonim.', method: 'Link bio Instagram masif.', output: 'Ruang aman menyuarakan keresahan.' }
-    };
-
-    function openModal(id) {
-        const data = programData[id];
-        let actionButton = '';
-        if (id === 'modal-hukumin') {
-            actionButton = `<a href="/hukumin-simulasi.html" class="block w-full text-center bg-gradient-to-r from-purple-700 to-pink-600 text-white py-4 rounded-xl font-black shadow-lg animate-bounce mt-6">COBA SIMULASI SEKARANG</a>`;
-        } else {
-            actionButton = `<button onclick="closeModal()" class="w-full bg-navy-agid text-white py-4 rounded-xl font-black mt-6">TUTUP</button>`;
-        }
-        document.getElementById('modal-content').innerHTML = `
-            <h3 class="text-3xl font-black text-[#000080] mb-2 italic">${data.title}</h3>
-            <p class="text-[#7a6200] font-bold uppercase mb-4 text-xs">${data.subtitle}</p>
-            <div class="text-left space-y-3 text-xs">
-                <p><strong>Fokus:</strong> ${data.focus}</p>
-                <p><strong>Metode:</strong> ${data.method}</p>
-                <p class="text-emerald-700"><strong>Output:</strong> ${data.output}</p>
-            </div>
-            ${actionButton}
-        `;
-        document.getElementById('modal-container').classList.remove('hidden');
-    }
-
-    function closeModal() {
-        document.getElementById('modal-container').classList.add('hidden');
-    }
-</script>
 </body>
 </html>
-
-
-
-
