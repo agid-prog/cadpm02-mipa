@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Ambil path yang diminta user
+        var path = window.location.pathname;
+        
+        // Redirect ke index.html dengan path sebagai hash sementara
+        // Nanti script di index.html akan handle scrolling
+        window.location.replace('/' + '?redirect=' + path);
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

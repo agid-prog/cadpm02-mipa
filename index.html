@@ -609,6 +609,30 @@
         setInterval(updateCountdown, 1000);
     </script>
     <script>
+    
+    // Handle redirect dari 404.html
+const urlParams = new URLSearchParams(window.location.search);
+const redirectPath = urlParams.get('redirect');
+
+if (redirectPath) {
+    // Hapus query string dari URL
+    history.replaceState(null, null, redirectPath);
+    
+    // Scroll ke section yang diminta
+    const targetId = redirectPath.substring(1); // Hapus "/" di depan
+    const target = document.getElementById(targetId);
+    
+    if (target) {
+        setTimeout(() => {
+            const navbarHeight = 80;
+            window.scrollTo({
+                top: target.offsetTop - navbarHeight,
+                behavior: 'smooth'
+            });
+        }, 100);
+    }
+}
+
 // Smooth scroll + URL bersih
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
