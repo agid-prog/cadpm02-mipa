@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -9,29 +10,32 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <script>
-    if (window.location.pathname === '/index.html') {
-        window.location.replace('/');
-    }
+        if (window.location.pathname === '/index.html') {
+            window.location.replace('/');
+        }
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000080">
-    
+
     <!-- SEO Meta Tags -->
     <title>Agid Al Syah Putra - CADPM 02 KM FMIPA UNAND 2026</title>
-    <meta name="description" content="Website resmi kampanye Agid Al Syah Putra - Calon Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Andalas. Vote 02 untuk perubahan!">
-    <meta name="keywords" content="CADPM 02, Agid Al Syah Putra, DPM FMIPA UNAND, Fisika, Pemira FMIPA, UNAND, agid al syah putra, agid, Mahasiswa Fisika, Universitas Andalas, Dewan Perwakilan Mahasiswa, Dewan">
+    <meta name="description"
+        content="Website resmi kampanye Agid Al Syah Putra - Calon Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Andalas. Vote 02 untuk perubahan!">
+    <meta name="keywords"
+        content="CADPM 02, Agid Al Syah Putra, DPM FMIPA UNAND, Fisika, Pemira FMIPA, UNAND, agid al syah putra, agid, Mahasiswa Fisika, Universitas Andalas, Dewan Perwakilan Mahasiswa, Dewan">
     <meta name="author" content="Agid Al Syah Putra">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cadpm02mipa.my.id">
-    
+
     <!-- Open Graph Meta Tags (WhatsApp, Facebook) -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="id_ID">
     <meta property="og:site_name" content="CADPM 02 - Agid Al Syah Putra">
     <meta property="og:title" content="Agid Al Syah Putra - CADPM 02 KM FMIPA UNAND">
-    <meta property="og:description" content="Calon Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Andalas. Vote 02 untuk perubahan!">
+    <meta property="og:description"
+        content="Calon Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Andalas. Vote 02 untuk perubahan!">
     <meta property="og:url" content="https://cadpm02mipa.my.id">
     <meta property="og:image" content="https://cadpm02mipa.my.id/preview-image.jpg">
     <meta property="og:image:secure_url" content="https://cadpm02mipa.my.id/preview-image.jpg">
@@ -39,7 +43,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="AGID AL SYAH PUTRA - CADPM 02 KM FMIPA UNAND">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@cadpm02mipa">
@@ -63,20 +67,38 @@
       ]
     }
     </script>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
         /* Palet Warna Agid */
-        .bg-navy-agid { background-color: #000080; }
-        .bg-maroon-agid { background-color: #400000; }
-        .text-gold-dark { color: #7a6200; }
-        .text-gold-bright { color: #ffc200; }
-        .border-gold { border-color: #7a6200; }
-        
+        .bg-navy-agid {
+            background-color: #000080;
+        }
+
+        .bg-maroon-agid {
+            background-color: #400000;
+        }
+
+        .text-gold-dark {
+            color: #7a6200;
+        }
+
+        .text-gold-bright {
+            color: #ffc200;
+        }
+
+        .border-gold {
+            border-color: #7a6200;
+        }
+
         /* Efek Grunge/Texture (Simulasi dari Canva) */
         .grunge-overlay {
             background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
@@ -85,25 +107,25 @@
 
         /* Shadow Khusus Foto Transparan */
         .photo-shadow {
-            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
         }
 
         .glow-02 {
             text-shadow: 0 0 20px rgba(255, 194, 0, 0.6);
         }
-        
+
         /* Countdown Timer Styles */
         .countdown-box {
             background: linear-gradient(135deg, rgba(255, 194, 0, 0.1), rgba(122, 98, 0, 0.1));
             backdrop-filter: blur(10px);
             border: 2px solid rgba(255, 194, 0, 0.3);
         }
-        
+
         .countdown-number {
             font-variant-numeric: tabular-nums;
             line-height: 1;
         }
-        
+
         /* Ornamen 4 Jurusan MIPA */
         .mipa-ornament {
             position: absolute;
@@ -113,32 +135,49 @@
             opacity: 0.15;
             filter: blur(60px);
         }
-        
-        .physics-orb { background: #5ca3ff; } /* Fisika - Soft Blue */
-        .biology-orb { background: #2e6417; } /* Biologi - Forest Green */
-        .math-orb { background: #641919; } /* Matematika - Dark Red */
-        .chemistry-orb { background: #ffd15a; } /* Kimia - Orange Yellow */
-        
+
+        .physics-orb {
+            background: #5ca3ff;
+        }
+
+        /* Fisika - Soft Blue */
+        .biology-orb {
+            background: #2e6417;
+        }
+
+        /* Biologi - Forest Green */
+        .math-orb {
+            background: #641919;
+        }
+
+        /* Matematika - Dark Red */
+        .chemistry-orb {
+            background: #ffd15a;
+        }
+
+        /* Kimia - Orange Yellow */
+
         /* Pattern Batik MIPA */
         .batik-mipa {
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 30%, rgba(92, 163, 255, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 209, 90, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 60% 70%, rgba(46, 100, 23, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 30% 80%, rgba(100, 25, 25, 0.1) 0%, transparent 50%);
         }
-        
+
         /* Gradient Strip 4 Jurusan */
         .mipa-gradient {
-            background: linear-gradient(90deg, 
-                #5ca3ff 0%, 
-                #2e6417 25%, 
-                #641919 50%, 
-                #ffd15a 75%, 
-                #5ca3ff 100%);
+            background: linear-gradient(90deg,
+                    #5ca3ff 0%,
+                    #2e6417 25%,
+                    #641919 50%,
+                    #ffd15a 75%,
+                    #5ca3ff 100%);
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
 
     <nav class="fixed w-full z-50 bg-[#000080]/90 backdrop-blur-md border-b border-[#7a6200]/30 text-white">
@@ -146,7 +185,8 @@
             <div class="flex items-center gap-3">
                 <span class="text-3xl font-black italic tracking-tighter glow-02">02</span>
                 <div class="h-8 w-[2px] bg-[#7a6200]"></div>
-                <span class="font-bold text-xs md:text-sm tracking-wider uppercase text-[#ffc200]">AGID AL SYAH PUTRA</span>
+                <span class="font-bold text-xs md:text-sm tracking-wider uppercase text-[#ffc200]">AGID AL SYAH
+                    PUTRA</span>
             </div>
             <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase">
                 <a href="#beranda" class="hover:text-[#ffc200] transition">Beranda</a>
@@ -159,19 +199,20 @@
 
     <section id="beranda" class="relative min-h-screen bg-navy-agid flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 grunge-overlay"></div>
-        
+
         <!-- Ornamen 4 Jurusan MIPA -->
         <div class="mipa-ornament physics-orb top-20 left-10 animate-pulse" style="animation-duration: 3s;"></div>
         <div class="mipa-ornament chemistry-orb top-40 right-20 animate-pulse" style="animation-duration: 4s;"></div>
         <div class="mipa-ornament math-orb bottom-40 left-32 animate-pulse" style="animation-duration: 3.5s;"></div>
         <div class="mipa-ornament biology-orb bottom-20 right-40 animate-pulse" style="animation-duration: 4.5s;"></div>
         <div class="absolute inset-0 batik-mipa"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="md:col-span-2 text-white space-y-6">
                 <!-- TANGGAL PENTING -->
                 <div class="bg-white/10 backdrop-blur-xl border border-[#ffc200]/30 rounded-2xl p-6 shadow-2xl">
-                    <h3 class="text-[#ffc200] font-black text-sm md:text-base uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <h3
+                        class="text-[#ffc200] font-black text-sm md:text-base uppercase tracking-wider mb-3 flex items-center gap-2">
                         <i class="fas fa-calendar-alt"></i>
                         Agenda Penting
                     </h3>
@@ -199,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- COUNTDOWN TIMER -->
                 <div class="relative -mt-6 bg-gradient-to-r from-[#7a6200] to-[#ffc200] p-1 rounded-2xl animate-pulse">
                     <div class="bg-navy-agid/95 backdrop-blur-md p-4 md:p-6 rounded-xl">
@@ -207,54 +248,69 @@
                         <div class="text-center mb-4">
                             <div class="flex items-center justify-center gap-2 mb-2">
                                 <i class="fas fa-bullhorn text-[#ffc200] text-xl md:text-2xl animate-bounce"></i>
-                                <h3 id="countdown-title" class="text-[#ffc200] font-black text-sm md:text-lg uppercase tracking-wider">Loading...</h3>
+                                <h3 id="countdown-title"
+                                    class="text-[#ffc200] font-black text-sm md:text-lg uppercase tracking-wider">
+                                    Loading...</h3>
                             </div>
                             <p id="countdown-subtitle" class="text-white/90 text-xs md:text-sm font-semibold"></p>
                         </div>
-                        
+
                         <!-- Countdown Boxes -->
                         <div class="grid grid-cols-4 gap-2 md:gap-3">
                             <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="days" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
+                                <div id="days" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00
+                                </div>
                                 <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Hari</div>
                             </div>
                             <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="hours" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
+                                <div id="hours" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">
+                                    00</div>
                                 <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Jam</div>
                             </div>
                             <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="minutes" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
+                                <div id="minutes"
+                                    class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
                                 <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Menit</div>
                             </div>
                             <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="seconds" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
+                                <div id="seconds"
+                                    class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
                                 <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Detik</div>
                             </div>
                         </div>
-                        
+
                         <!-- Call to Action -->
                         <div id="countdown-cta" class="mt-4 text-center">
                             <p class="text-white/80 text-xs md:text-sm font-medium"></p>
                         </div>
                     </div>
                 </div>
-                
-                <h2 class="text-[#ffc200] font-bold tracking-wide uppercase text-xs md:text-sm leading-relaxed text-center mx-auto max-w-4xl">Calon Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Andalas</h2>
+
+                <h2
+                    class="text-[#ffc200] font-bold tracking-wide uppercase text-xs md:text-sm leading-relaxed text-center mx-auto max-w-4xl">
+                    Calon Dewan Perwakilan Mahasiswa Keluarga Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam
+                    Universitas Andalas</h2>
                 <h1 class="leading-tight">
                     <span class="block text-5xl md:text-7xl font-black text-[#ffc200] glow-02">AGID AL SYAH PUTRA</span>
                     <span class="block -mt-1 text-xl md:text-3xl font-bold tracking-wide text-white">NO. URUT 02</span>
                 </h1>
                 <div class="flex gap-4 flex-wrap">
-                    <a href="#visi&misi" class="bg-[#7a6200] hover:bg-[#ffc200] hover:text-black text-white px-6 md:px-8 py-3 md:py-4 font-bold transition duration-300 uppercase tracking-widest text-sm">Lihat Visi Misi</a>
-                    <a href="#proung" class="bg-white/10 hover:bg-white hover:text-navy-agid text-white px-6 md:px-8 py-3 md:py-4 font-bold transition duration-300 uppercase tracking-widest text-sm border-2 border-white/30">Program Kerja</a>
+                    <a href="#visi&misi"
+                        class="bg-[#7a6200] hover:bg-[#ffc200] hover:text-black text-white px-6 md:px-8 py-3 md:py-4 font-bold transition duration-300 uppercase tracking-widest text-sm">Lihat
+                        Visi Misi</a>
+                    <a href="#proung"
+                        class="bg-white/10 hover:bg-white hover:text-navy-agid text-white px-6 md:px-8 py-3 md:py-4 font-bold transition duration-300 uppercase tracking-widest text-sm border-2 border-white/30">Program
+                        Kerja</a>
                 </div>
             </div>
 
-            <div class="relative flex justify-center items-end md:col-span-3 -ml-6 order-first md:order-last h-full overflow-hidden">
-                <div class="absolute right-0 bottom-1/4 text-[12rem] md:text-[16rem] font-black text-white/5 select-none leading-none pointer-events-none">02</div>               
-                <img src="agidcadpm.png"
-                     alt="Agid Al Syah Putra" 
-                     class="relative z-10 w-full max-w-3xl h-auto photo-shadow scale-100 md:scale-110 translate-y-6">
+            <div
+                class="relative flex justify-center items-end md:col-span-3 -ml-6 order-first md:order-last h-full overflow-hidden">
+                <div
+                    class="absolute right-0 bottom-1/4 text-[12rem] md:text-[16rem] font-black text-white/5 select-none leading-none pointer-events-none">
+                    02</div>
+                <img src="agidcadpm.png" alt="Agid Al Syah Putra"
+                    class="relative z-10 w-full max-w-3xl h-auto photo-shadow scale-100 md:scale-110 translate-y-6">
             </div>
         </div>
     </section>
@@ -262,16 +318,19 @@
     <section id="visi&misi" class="py-24 relative bg-navy-agid border-t-8 border-[#7a6200]">
         <!-- Ornamen 4 Jurusan MIPA -->
         <div class="mipa-ornament biology-orb top-10 right-20 animate-pulse" style="animation-duration: 4s;"></div>
-        <div class="mipa-ornament chemistry-orb bottom-20 left-10 animate-pulse" style="animation-duration: 3.5s;"></div>
+        <div class="mipa-ornament chemistry-orb bottom-20 left-10 animate-pulse" style="animation-duration: 3.5s;">
+        </div>
         <div class="absolute inset-0 batik-mipa"></div>
-        
+
         <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <div class="bg-maroon-agid p-12 rounded-tl-[100px] rounded-br-[100px] border-2 border-[#ffc200]/30 shadow-2xl relative overflow-hidden">
+            <div
+                class="bg-maroon-agid p-12 rounded-tl-[100px] rounded-br-[100px] border-2 border-[#ffc200]/30 shadow-2xl relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-8 text-8xl font-black text-white/5">VISI</div>
-                
+
                 <h3 class="text-[#ffc200] text-center text-4xl font-black mb-8 uppercase tracking-tighter">Visi</h3>
                 <p class="text-white text-center text-2xl md:text-3xl font-bold leading-relaxed italic">
-                    "Mewujudkan DPM KM FMIPA sebagai Lembaga Legislatif yang Berintegritas dan Berbasis Digital guna Terciptanya Pengawasan yang Berkualitas untuk KM FMIPA."
+                    "Mewujudkan DPM KM FMIPA sebagai Lembaga Legislatif yang Berintegritas dan Berbasis Digital guna
+                    Terciptanya Pengawasan yang Berkualitas untuk KM FMIPA."
                 </p>
             </div>
 
@@ -281,25 +340,39 @@
                     <h3 class="text-[#ffc200] text-5xl md:text-4xl font-black uppercase tracking-tighter mb-2">MISI</h3>
                     <div class="h-2 bg-gradient-to-r from-transparent via-[#ffc200] to-transparent rounded-full"></div>
                 </div>
-                
+
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
+                <div
+                    class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
                     <span class="text-[#ffc200] font-black text-3xl">01.</span>
-                    <p class="text-white font-semibold mt-4" style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Meningkatkan kapasitas intelektual anggota DPM terhadap tugas pokok fungsi legislasi melalui edukasi berbasis digital.</p>
+                    <p class="text-white font-semibold mt-4"
+                        style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Meningkatkan kapasitas
+                        intelektual anggota DPM terhadap tugas pokok fungsi legislasi melalui edukasi berbasis digital.
+                    </p>
                 </div>
-                <div class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
+                <div
+                    class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
                     <span class="text-[#ffc200] font-black text-3xl">02.</span>
-                    <p class="text-white font-semibold mt-4" style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Membangun kesadaran hukum bagi mahasiswa KM FMIPA melalui inovasi konten edukasi yang interaktif dan mudah diakses.</p>
+                    <p class="text-white font-semibold mt-4"
+                        style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Membangun kesadaran hukum bagi
+                        mahasiswa KM FMIPA melalui inovasi konten edukasi yang interaktif dan mudah diakses.</p>
                 </div>
-                <div class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
+                <div
+                    class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
                     <span class="text-[#ffc200] font-black text-3xl">03.</span>
-                    <p class="text-white font-semibold mt-4" style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Menerapkan sistem monitoring dan audit kinerja BEM yang berbasis data, transparan, dan tegas demi manfaat bagi mahasiswa.</p>
+                    <p class="text-white font-semibold mt-4"
+                        style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Menerapkan sistem monitoring dan
+                        audit kinerja BEM yang berbasis data, transparan, dan tegas demi manfaat bagi mahasiswa.</p>
                 </div>
-                <div class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
+                <div
+                    class="bg-maroon-agid backdrop-blur-sm p-8 border-l-4 border-[#ffc200] rounded-lg hover:scale-105 transition-transform duration-300">
                     <span class="text-[#ffc200] font-black text-3xl">04.</span>
-                    <p class="text-white font-semibold mt-4" style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Mengoptimalkan sistem penjemputan aspirasi yang menjamin kerahasiaan mahasiswa guna menciptakan lingkungan kampus yang solutif.</p>
+                    <p class="text-white font-semibold mt-4"
+                        style="color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Mengoptimalkan sistem
+                        penjemputan aspirasi yang menjamin kerahasiaan mahasiswa guna menciptakan lingkungan kampus yang
+                        solutif.</p>
                 </div>
             </div>
         </div>
@@ -308,12 +381,12 @@
     <!-- SECTION PROGRAM UNGGULAN - DIPERBAIKI -->
     <section id="proung" class="py-24 px-4 bg-navy-agid relative overflow-hidden border-t-8 border-[#7a6200]">
         <div class="absolute inset-0 grunge-overlay"></div>
-        
+
         <!-- Ornamen 4 Jurusan MIPA -->
         <div class="mipa-ornament math-orb top-20 left-20 animate-pulse" style="animation-duration: 3s;"></div>
         <div class="mipa-ornament physics-orb top-10 right-10 animate-pulse" style="animation-duration: 4.5s;"></div>
         <div class="absolute inset-0 batik-mipa"></div>
-        
+
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-[#ffc200] text-4xl font-black mb-4 uppercase">Program Unggulan</h2>
@@ -322,63 +395,83 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="group relative bg-white rounded-[40px] overflow-hidden border-2 border-transparent hover:border-[#ffc200] transition-all duration-500 shadow-xl">
-                    <div class="h-48 bg-gradient-to-br from-[#641919] to-[#400000] flex items-center justify-center relative">
+                <div
+                    class="group relative bg-white rounded-[40px] overflow-hidden border-2 border-transparent hover:border-[#ffc200] transition-all duration-500 shadow-xl">
+                    <div
+                        class="h-48 bg-gradient-to-br from-[#641919] to-[#400000] flex items-center justify-center relative">
                         <div class="absolute inset-0 grunge-overlay"></div>
-                        <i class="fas fa-certificate text-6xl text-[#ffc200] group-hover:scale-110 transition duration-500 relative z-10"></i>
+                        <i
+                            class="fas fa-certificate text-6xl text-[#ffc200] group-hover:scale-110 transition duration-500 relative z-10"></i>
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-black text-navy-agid mb-2">SERTA DPM</h3>
-                        <p class="text-xs font-bold text-[#641919] uppercase mb-4 tracking-tighter">Sertifikasi Anggota DPM</p>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Standarisasi kompetensi internal melalui pelatihan dan ujian digital bagi seluruh pengurus.</p>
-                        
-                        <button onclick="openModal('modal-serta')" class="w-full bg-gradient-to-r from-[#641919] to-[#400000] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
+                        <p class="text-xs font-bold text-[#641919] uppercase mb-4 tracking-tighter">Sertifikasi Anggota
+                            DPM</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Standarisasi kompetensi internal melalui
+                            pelatihan dan ujian digital bagi seluruh pengurus.</p>
+
+                        <button onclick="openModal('modal-serta')"
+                            class="w-full bg-gradient-to-r from-[#641919] to-[#400000] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
                             Detail Program <i class="fas fa-arrow-right text-xs"></i>
                         </button>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-[40px] overflow-hidden border-2 border-transparent hover:border-[#ffc200] transition-all duration-500 shadow-xl">
-                    <div class="h-48 bg-gradient-to-br from-[#2e6417] to-[#1a3d0d] flex items-center justify-center relative">
+                <div
+                    class="group relative bg-white rounded-[40px] overflow-hidden border-2 border-transparent hover:border-[#ffc200] transition-all duration-500 shadow-xl">
+                    <div
+                        class="h-48 bg-gradient-to-br from-[#2e6417] to-[#1a3d0d] flex items-center justify-center relative">
                         <div class="absolute inset-0 grunge-overlay"></div>
-                        <i class="fas fa-balance-scale text-6xl text-[#ffd15a] group-hover:scale-110 transition duration-500 relative z-10"></i>
+                        <i
+                            class="fas fa-balance-scale text-6xl text-[#ffd15a] group-hover:scale-110 transition duration-500 relative z-10"></i>
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-black text-navy-agid mb-2">HUKUMIN!</h3>
-                        <p class="text-xs font-bold text-[#2e6417] uppercase mb-4 tracking-tighter">Hukum Menarik & Interaktif</p>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Edukasi konstitusi & hukum melalui kuis interaktif di media sosial (Instagram).</p>
-                        
-                        <button onclick="openModal('modal-hukumin')" class="w-full bg-gradient-to-r from-[#2e6417] to-[#1a3d0d] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
+                        <p class="text-xs font-bold text-[#2e6417] uppercase mb-4 tracking-tighter">Hukum Menarik &
+                            Interaktif</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Edukasi konstitusi & hukum melalui kuis
+                            interaktif di media sosial (Instagram).</p>
+
+                        <button onclick="openModal('modal-hukumin')"
+                            class="w-full bg-gradient-to-r from-[#2e6417] to-[#1a3d0d] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
                             Detail Program <i class="fas fa-arrow-right text-xs"></i>
                         </button>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-[40px] overflow-hidden border-2 border-transparent hover:border-[#ffc200] transition-all duration-500 shadow-xl">
-                    <div class="h-48 bg-gradient-to-br from-[#5ca3ff] to-[#000080] flex items-center justify-center relative">
+                <div
+                    class="group relative bg-white rounded-[40px] overflow-hidden border-2 border-transparent hover:border-[#ffc200] transition-all duration-500 shadow-xl">
+                    <div
+                        class="h-48 bg-gradient-to-br from-[#5ca3ff] to-[#000080] flex items-center justify-center relative">
                         <div class="absolute inset-0 grunge-overlay"></div>
-                        <i class="fas fa-user-secret text-6xl text-[#ffd15a] group-hover:scale-110 transition duration-500 relative z-10"></i>
+                        <i
+                            class="fas fa-user-secret text-6xl text-[#ffd15a] group-hover:scale-110 transition duration-500 relative z-10"></i>
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-black text-navy-agid mb-2">SENYAP</h3>
-                        <p class="text-xs font-bold text-[#5ca3ff] uppercase mb-4 tracking-tighter">Sistem Penyaluran Aspirasi</p>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Platform aspirasi anonim dan aman untuk menjemput suara mahasiswa tanpa rasa takut.</p>
-                        
-                        <button onclick="openModal('modal-senyap')" class="w-full bg-gradient-to-r from-[#5ca3ff] to-[#000080] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
+                        <p class="text-xs font-bold text-[#5ca3ff] uppercase mb-4 tracking-tighter">Sistem Penyaluran
+                            Aspirasi</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Platform aspirasi anonim dan aman untuk
+                            menjemput suara mahasiswa tanpa rasa takut.</p>
+
+                        <button onclick="openModal('modal-senyap')"
+                            class="w-full bg-gradient-to-r from-[#5ca3ff] to-[#000080] text-white py-3 rounded-xl font-bold hover:from-[#7a6200] hover:to-[#ffc200] transition flex items-center justify-center gap-2">
                             Detail Program <i class="fas fa-arrow-right text-xs"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Gradient Strip 4 Jurusan MIPA -->
         <div class="mipa-gradient h-3 w-full mt-16"></div>
     </section>
 
-    <div id="modal-container" class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div id="modal-container"
+        class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white max-w-lg w-full rounded-[32px] overflow-hidden relative shadow-2xl">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-black text-2xl">&times;</button>
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-slate-400 hover:text-black text-2xl">&times;</button>
             <div id="modal-content" class="p-10 text-center">
             </div>
         </div>
@@ -386,36 +479,36 @@
 
     <script>
         const programData = {
-    'modal-serta': {
-        title: 'SERTA',
-        subtitle: 'Sertifikasi Aspirasi',
-        focus: 'Fokus: Standarisasi Kompetensi Internal.',
-        method: 'Metode: Pelatihan dan ujian kompetensi digital secara berkala bagi seluruh pengurus.',
-        output: 'Output: Menjamin pengurus DPM yang cerdas, profesional, dan berintegritas.'
-    },
-    'modal-hukumin': {
-        title: 'HUKUMIN!',
-        subtitle: 'Hukum Menarik & Interaktif',
-        focus: 'Fokus: Edukasi Hukum & Konstitusi.',
-        method: 'Kuis interaktif melalui media sosial (Instagram).',
-        output: 'Output: Meningkatkan literasi hukum mahasiswa FMIPA dengan cara yang modern.'
-    },
-    'modal-senyap': {
-        title: 'SENYAP',
-        subtitle: 'Sistem Penyaluran Aspirasi',
-        focus: 'Fokus: Penjemputan Aspirasi Aman & Anonim.',
-        method: 'Metode: Link bio Instagram yang disebarkan masif melalui jaringan Komting Angkatan.',
-        output: 'Output: Terciptanya ruang aman bagi mahasiswa untuk menyuarakan keresahan.'
-    }
-}; // Ini adalah satu-satunya penutup untuk seluruh blok programData
+            'modal-serta': {
+                title: 'SERTA',
+                subtitle: 'Sertifikasi Aspirasi',
+                focus: 'Fokus: Standarisasi Kompetensi Internal.',
+                method: 'Metode: Pelatihan dan ujian kompetensi digital secara berkala bagi seluruh pengurus.',
+                output: 'Output: Menjamin pengurus DPM yang cerdas, profesional, dan berintegritas.'
+            },
+            'modal-hukumin': {
+                title: 'HUKUMIN!',
+                subtitle: 'Hukum Menarik & Interaktif',
+                focus: 'Fokus: Edukasi Hukum & Konstitusi.',
+                method: 'Kuis interaktif melalui media sosial (Instagram).',
+                output: 'Output: Meningkatkan literasi hukum mahasiswa FMIPA dengan cara yang modern.'
+            },
+            'modal-senyap': {
+                title: 'SENYAP',
+                subtitle: 'Sistem Penyaluran Aspirasi',
+                focus: 'Fokus: Penjemputan Aspirasi Aman & Anonim.',
+                method: 'Metode: Link bio Instagram yang disebarkan masif melalui jaringan Komting Angkatan.',
+                output: 'Output: Terciptanya ruang aman bagi mahasiswa untuk menyuarakan keresahan.'
+            }
+        }; // Ini adalah satu-satunya penutup untuk seluruh blok programData
 
         function openModal(id) {
-    const data = programData[id];
-    let actionButton = '';
+            const data = programData[id];
+            let actionButton = '';
 
-    // Logika Tombol berdasarkan ID
-    if (id === 'modal-serta') {
-        actionButton = `
+            // Logika Tombol berdasarkan ID
+            if (id === 'modal-serta') {
+                actionButton = `
             <div class="space-y-3 mt-8">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScfDfcWGxo6rBe6g8gm_bpIokZV6MDezdeJ9pAy44GQsO99bw/viewform" 
                    target="_blank" 
@@ -424,8 +517,8 @@
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-navy-agid transition">Nanti Saja</button>
             </div>`;
-    } else if (id === 'modal-hukumin') {
-        actionButton = `
+            } else if (id === 'modal-hukumin') {
+                actionButton = `
             <div class="space-y-3 mt-8">
                 <a href="/hukumin-simulasi"
                    class="block w-full text-center bg-gradient-to-r from-purple-700 to-pink-600 text-white py-4 rounded-xl font-black hover:scale-[1.02] transition-all shadow-lg">
@@ -433,8 +526,8 @@
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-navy-agid transition">Nanti Saja</button>
             </div>`;
-    } else if (id === 'modal-senyap') {
-        actionButton = `
+            } else if (id === 'modal-senyap') {
+                actionButton = `
             <div class="space-y-3 mt-8">
                 <a href="https://forms.gle/YLjs474iAd233kzM9" 
                    target="_blank" 
@@ -443,19 +536,19 @@
                 </a>
                 <button onclick="closeModal()" class="w-full text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-green-600 transition">Nanti Saja</button>
             </div>`;
-    } else {
-        actionButton = `
+            } else {
+                actionButton = `
             <button onclick="closeModal()" class="mt-8 bg-navy-agid text-white px-8 py-3 rounded-xl font-bold w-full hover:bg-slate-800 transition shadow-lg">
                 Tutup
             </button>`;
-    }
+            }
 
-    // Merakit konten modal
-    const focusContent = data.focus.includes(':') ? data.focus.split(': ')[1] : data.focus;
-    const methodContent = data.method.includes(':') ? data.method.split(': ')[1] : data.method;
-    const outputContent = data.output.includes(':') ? data.output.split(': ')[1] : data.output;
+            // Merakit konten modal
+            const focusContent = data.focus.includes(':') ? data.focus.split(': ')[1] : data.focus;
+            const methodContent = data.method.includes(':') ? data.method.split(': ')[1] : data.method;
+            const outputContent = data.output.includes(':') ? data.output.split(': ')[1] : data.output;
 
-    const content = `
+            const content = `
         <h3 class="text-3xl font-black text-[#000080] mb-2 italic tracking-tighter">${data.title}</h3>
         <p class="text-[#7a6200] font-bold uppercase mb-4 text-xs tracking-widest">${data.subtitle}</p>
         <div class="text-left space-y-3 text-slate-700">
@@ -466,10 +559,10 @@
         ${data.content || ''}
         ${actionButton}
     `;
-    
-    document.getElementById('modal-content').innerHTML = content;
-    document.getElementById('modal-container').classList.remove('hidden');
-}
+
+            document.getElementById('modal-content').innerHTML = content;
+            document.getElementById('modal-container').classList.remove('hidden');
+        }
 
         function closeModal() {
             document.getElementById('modal-container').classList.add('hidden');
@@ -479,24 +572,32 @@
     <!-- SECTION DOKUMEN STRATEGIS - DIPERBAIKI -->
     <section id="kenalan" class="py-20 bg-maroon-agid relative border-t-8 border-[#7a6200]">
         <div class="absolute inset-0 grunge-overlay"></div>
-        
+
         <!-- Ornamen 4 Jurusan MIPA -->
         <div class="mipa-ornament chemistry-orb top-10 left-40 animate-pulse" style="animation-duration: 4s;"></div>
         <div class="mipa-ornament biology-orb bottom-10 right-40 animate-pulse" style="animation-duration: 3.5s;"></div>
-        
+
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
             <h2 class="text-[#ffc200] text-4xl font-black mb-4 uppercase">Kenali Agid Lebih Dekat</h2>
-            <p class="text-white/80 font-bold tracking-widest uppercase text-sm mb-12">Yuk kenal lebih dalam siapa AGID!</p>
-            
+            <p class="text-white/80 font-bold tracking-widest uppercase text-sm mb-12">Yuk kenal lebih dalam siapa AGID!
+            </p>
+
             <div class="grid md:grid-cols-2 gap-8">
-                <a href="https://s.id/ManifestasiCADPM02KMFMIPA" class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
+                <a href="https://s.id/ManifestasiCADPM02KMFMIPA"
+                    class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
                     <i class="fas fa-file-pdf text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
-                    <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Kisah & Perjalanan Agid</h4>
-                    <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Melalui dokumen ini, saya merangkum latar belakang pribadi, perjalanan hidup, rekam jejak, penghargaan, serta visi dan misi saya</p>
+                    <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Kisah & Perjalanan
+                        Agid</h4>
+                    <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Melalui dokumen ini, saya
+                        merangkum latar belakang pribadi, perjalanan hidup, rekam jejak, penghargaan, serta visi dan
+                        misi saya</p>
                 </a>
-                <a href="https://drive.google.com/file/d/1vd_1S1Ixp4g6mFa4fHoU-Fgvle-8U2Ix/view?usp=sharing" class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
-                    <i class="fas fa-file-powerpoint text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
-                    <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Visi Misi Lengkap</h4>
+                <a href="https://drive.google.com/file/d/1vd_1S1Ixp4g6mFa4fHoU-Fgvle-8U2Ix/view?usp=sharing"
+                    class="group p-8 bg-white/5 backdrop-blur-sm border-4 border-[#ffc200] hover:bg-[#ffc200] transition duration-500 rounded-2xl">
+                    <i
+                        class="fas fa-file-powerpoint text-5xl mb-4 text-[#ffc200] group-hover:text-navy-agid transition"></i>
+                    <h4 class="font-black text-white group-hover:text-navy-agid text-xl uppercase">Visi Misi Lengkap
+                    </h4>
                     <p class="text-white/70 group-hover:text-navy-agid/70 text-xs mt-2">Presentasi detail program</p>
                 </a>
             </div>
@@ -506,36 +607,44 @@
     <footer class="bg-black text-white py-12 border-t-4 border-[#ffc200] relative overflow-hidden">
         <!-- Gradient Strip 4 Jurusan di atas footer -->
         <div class="mipa-gradient h-2 w-full absolute top-0 left-0"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 text-center space-y-6 relative z-10">
             <div class="text-5xl font-black text-[#ffc200] glow-02">02</div>
             <p class="tracking-[0.5em] font-bold text-sm">AGID AL SYAH PUTRA • MAHASISWA FISIKA 2023</p>
-            
+
             <!-- Social Media Links dengan Label -->
             <div class="space-y-4">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
                     <!-- Instagram Pribadi -->
-                    <a href="https://instagram.com/agidal_" class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
-                        <span class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG Pribadi:</span>
-                        <div class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                    <a href="https://instagram.com/agidal_"
+                        class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                        <span
+                            class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG
+                            Pribadi:</span>
+                        <div
+                            class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
                             <i class="fab fa-instagram text-2xl"></i>
                             <span class="font-bold">@agidal_</span>
                         </div>
                     </a>
-                    
+
                     <!-- Instagram Kampanye -->
-                    <a href="https://instagram.com/cadpm02mipa" class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
-                        <span class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG Kampanye:</span>
-                        <div class="flex items-center gap-2 bg-gradient-to-r from-[#7a6200] to-[#ffc200] px-4 py-2 rounded-full">
+                    <a href="https://instagram.com/cadpm02mipa"
+                        class="group flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                        <span
+                            class="text-white/70 text-sm font-semibold uppercase tracking-wider group-hover:text-[#ffc200] transition">IG
+                            Kampanye:</span>
+                        <div
+                            class="flex items-center gap-2 bg-gradient-to-r from-[#7a6200] to-[#ffc200] px-4 py-2 rounded-full">
                             <i class="fas fa-bullhorn text-2xl"></i>
                             <span class="font-bold">@cadpm02mipa</span>
                         </div>
                     </a>
                 </div>
-                
+
                 <p class="text-white/50 text-xs mt-4">Follow untuk update terbaru seputar kampanye!</p>
             </div>
-            
+
             <!-- TAMBAHAN: Keterangan Resmi Website -->
             <div class="pt-8 mt-8 border-t border-white/10">
                 <p class="text-white/50 text-xs tracking-wide leading-relaxed">
@@ -581,7 +690,7 @@
                 document.getElementById('countdown-title').innerHTML = '✅ TERIMA KASIH SUDAH MEMILIH! ✅';
                 document.getElementById('countdown-subtitle').innerHTML = 'Pemira 2026 telah selesai';
                 document.getElementById('countdown-cta').innerHTML = '<p class="text-[#ffc200] text-base font-bold">🎊 Nantikan pengumuman hasil! 🎊</p>';
-                
+
                 document.getElementById('days').textContent = '00';
                 document.getElementById('hours').textContent = '00';
                 document.getElementById('minutes').textContent = '00';
@@ -600,7 +709,7 @@
             document.getElementById('countdown-title').innerHTML = title;
             document.getElementById('countdown-subtitle').innerHTML = subtitle;
             document.getElementById('countdown-cta').innerHTML = `<p class="text-white/80 text-xs md:text-sm font-medium">${cta}</p>`;
-            
+
             document.getElementById('days').textContent = String(days).padStart(2, '0');
             document.getElementById('hours').textContent = String(hours).padStart(2, '0');
             document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
@@ -612,69 +721,70 @@
         setInterval(updateCountdown, 1000);
     </script>
     <script>
-    
-    // Handle redirect dari 404.html
-const urlParams = new URLSearchParams(window.location.search);
-const redirectPath = urlParams.get('redirect');
 
-if (redirectPath) {
-    // Hapus query string dari URL
-    history.replaceState(null, null, redirectPath);
-    
-    // Scroll ke section yang diminta
-    const targetId = redirectPath.substring(1); // Hapus "/" di depan
-    const target = document.getElementById(targetId);
-    
-    if (target) {
-        setTimeout(() => {
-            const navbarHeight = 80;
-            window.scrollTo({
-                top: target.offsetTop - navbarHeight,
-                behavior: 'smooth'
-            });
-        }, 100);
-    }
-}
+        // Handle redirect dari 404.html
+        const urlParams = new URLSearchParams(window.location.search);
+        const redirectPath = urlParams.get('redirect');
 
-// Smooth scroll + URL bersih
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const target = document.getElementById(targetId);
-        
-        if (target) {
-            const navbarHeight = 80;
-            const targetPosition = target.offsetTop - navbarHeight;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-            
-            // Update URL jadi bersih (tanpa #)
-            history.pushState(null, null, '/' + targetId);
+        if (redirectPath) {
+            // Hapus query string dari URL
+            history.replaceState(null, null, redirectPath);
+
+            // Scroll ke section yang diminta
+            const targetId = redirectPath.substring(1); // Hapus "/" di depan
+            const target = document.getElementById(targetId);
+
+            if (target) {
+                setTimeout(() => {
+                    const navbarHeight = 80;
+                    window.scrollTo({
+                        top: target.offsetTop - navbarHeight,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
         }
-    });
-});
 
-// Ketika user langsung buka URL atau refresh
-window.addEventListener('load', function() {
-    const path = window.location.pathname.substring(1);
-    if (path) {
-        const target = document.getElementById(path);
-        if (target) {
-            setTimeout(() => {
-                const navbarHeight = 80;
-                window.scrollTo({
-                    top: target.offsetTop - navbarHeight,
-                    behavior: 'smooth'
-                });
-            }, 100);
-        }
-    }
-});
-</script>
+        // Smooth scroll + URL bersih
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+
+                if (target) {
+                    const navbarHeight = 80;
+                    const targetPosition = target.offsetTop - navbarHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Update URL jadi bersih (tanpa #)
+                    history.pushState(null, null, '/' + targetId);
+                }
+            });
+        });
+
+        // Ketika user langsung buka URL atau refresh
+        window.addEventListener('load', function () {
+            const path = window.location.pathname.substring(1);
+            if (path) {
+                const target = document.getElementById(path);
+                if (target) {
+                    setTimeout(() => {
+                        const navbarHeight = 80;
+                        window.scrollTo({
+                            top: target.offsetTop - navbarHeight,
+                            behavior: 'smooth'
+                        });
+                    }, 100);
+                }
+            }
+        });
+    </script>
 
 </body>
+
 </html>
