@@ -241,47 +241,60 @@
                     </div>
                 </div>
 
-                <!-- COUNTDOWN TIMER -->
-                <div class="relative -mt-6 bg-gradient-to-r from-[#7a6200] to-[#ffc200] p-1 rounded-2xl animate-pulse">
-                    <div class="bg-navy-agid/95 backdrop-blur-md p-4 md:p-6 rounded-xl">
-                        <!-- Header Countdown -->
-                        <div class="text-center mb-4">
-                            <div class="flex items-center justify-center gap-2 mb-2">
-                                <i class="fas fa-bullhorn text-[#ffc200] text-xl md:text-2xl animate-bounce"></i>
-                                <h3 id="countdown-title"
-                                    class="text-[#ffc200] font-black text-sm md:text-lg uppercase tracking-wider">
-                                    Loading...</h3>
-                            </div>
-                            <p id="countdown-subtitle" class="text-white/90 text-xs md:text-sm font-semibold"></p>
+                <!-- HASIL PEMIRA (SEMENTARA) -->
+                <div class="relative -mt-6 bg-gradient-to-r from-[#7a6200] to-[#ffc200] p-1 rounded-2xl shadow-2xl">
+                    <div class="bg-navy-agid/95 backdrop-blur-md p-6 md:p-8 rounded-xl text-center">
+                        <div
+                            class="inline-block bg-[#ffc200] text-navy-agid font-black text-xs md:text-sm px-4 py-1 rounded-full mb-4 animate-pulse">
+                            HASIL SUARA (MENUNGGU PENETAPAN)
                         </div>
 
-                        <!-- Countdown Boxes -->
-                        <div class="grid grid-cols-4 gap-2 md:gap-3">
-                            <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="days" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00
+                        <h3 class="text-white font-bold text-lg md:text-2xl mb-6">TERIMA KASIH ATAS DUKUNGAN ANDA!</h3>
+
+                        <div class="flex flex-col md:flex-row justify-center items-stretch gap-4 md:gap-8 mb-6">
+                            <!-- Card Pemenang (Agid) -->
+                            <div
+                                class="flex-1 bg-gradient-to-b from-[#7a6200]/20 to-[#ffc200]/10 border-2 border-[#ffc200] rounded-xl p-4 relative overflow-hidden group">
+                                <div class="relative z-10">
+                                    <div class="text-4xl md:text-6xl font-black text-[#ffc200] mb-2 glow-02">105</div>
+                                    <div class="text-xs md:text-sm font-bold text-white uppercase tracking-widest mb-1">
+                                        SUARA</div>
+                                    <div class="h-1 w-12 bg-[#ffc200] mx-auto mb-3 rounded-full"></div>
+                                    <h4 class="text-white font-bold text-lg leading-tight">AGID AL SYAH PUTRA</h4>
+                                    <p class="text-[#ffc200] text-sm font-bold">CADPM 02</p>
                                 </div>
-                                <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Hari</div>
+                                <!-- Confetti effect bg -->
+                                <div
+                                    class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]">
+                                </div>
                             </div>
-                            <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="hours" class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">
-                                    00</div>
-                                <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Jam</div>
+
+                            <!-- VS Divider -->
+                            <div class="flex items-center justify-center">
+                                <span class="text-white/30 font-black text-2xl italic">VS</span>
                             </div>
-                            <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="minutes"
-                                    class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
-                                <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Menit</div>
-                            </div>
-                            <div class="countdown-box p-2 md:p-3 rounded-lg text-center">
-                                <div id="seconds"
-                                    class="countdown-number text-xl md:text-3xl font-black text-[#ffc200]">00</div>
-                                <div class="text-white text-[9px] md:text-xs font-bold uppercase mt-1">Detik</div>
+
+                            <!-- Card Lawan -->
+                            <div
+                                class="flex-1 bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col justify-center items-center grayscale hover:grayscale-0 transition duration-500">
+                                <div class="text-3xl md:text-5xl font-bold text-white/50 mb-2">66</div>
+                                <div class="text-xs md:text-sm font-bold text-white/40 uppercase tracking-widest mb-1">
+                                    SUARA</div>
+                                <div class="h-1 w-12 bg-white/20 mx-auto mb-3 rounded-full"></div>
+                                <h4 class="text-white/70 font-bold text-lg leading-tight">KANDIDAT LAIN</h4>
+                                <p class="text-white/40 text-sm font-bold">CADPM 01</p>
                             </div>
                         </div>
 
-                        <!-- Call to Action -->
-                        <div id="countdown-cta" class="mt-4 text-center">
-                            <p class="text-white/80 text-xs md:text-sm font-medium"></p>
+                        <p class="text-white/80 text-sm md:text-base font-medium max-w-2xl mx-auto italic">
+                            "Terima kasih atas kepercayaan teman-teman. Mari kita kawal hasil ini hingga sidang
+                            penetapan resmi!"
+                        </p>
+
+                        <div class="mt-6">
+                            <span
+                                class="text-[#ffc200] font-black text-xs tracking-widest uppercase border-b border-[#ffc200]">TOTAL
+                                SUARA MASUK: 171</span>
                         </div>
                     </div>
                 </div>
