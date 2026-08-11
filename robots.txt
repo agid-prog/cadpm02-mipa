@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Mengizinkan Pemindai / Bot AI Publik
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://domain-web-cadpm-kamu.com/sitemap.xml
